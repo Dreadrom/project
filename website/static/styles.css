@@ -1,0 +1,92 @@
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 3rem;
+    padding-top: 1rem;
+  }
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 2rem;
+    padding-top: 1rem;
+  }
+
+  p,h4,h5,h6 {
+    font-family: 'Open Sans', sans-serif;
+    
+  }
+
+
+  .card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.card {
+  max-width: 100%;
+}
+
+.card-text {
+  word-wrap: break-word;
+}
+
+.carousel-indicators li, .carousel-indicators li .active {
+  
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: black; 
+  
+}
+
+.carousel-indicators {
+    bottom: -20px;
+    height: 5px;
+}
+
+
+.card-img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.navbar a{
+  font-family: 'Open Sans' sans-serif;
+}
+
+.nav-link a:hover{
+  color:indianred
+}
+
+div.site-branding { /* Position Logo and Text  */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.site-branding-logo { /* Position logo within site-branding */
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -14px;
+}
+
+div.site-branding-text { /* Position text within site-branding */
+    display: inline-block;
+    margin: auto 0;
+    vertical-align: middle;
+    
+}
+
+.icon-bar {
+  text-align:center;
+}
+
+.icon-bar a:hover {
+color: indianred
+}
+
+.instagram {
+  color: #f09433
+}
+

@@ -1,0 +1,258 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<!-- Title -->
+    <title>Hojiak SG</title>
+  </head>
+  <body>
+
+<!-- Logo and site header/title -->
+  <div class="site-branding">
+  <div class="site-branding-logo">
+    <img src="media\images\Hojiak_Color.png" width=240 height=240>
+  </div>
+</div>
+<div class="site-branding-text">
+<h5 id="site-title"><strong>Local fare at your fingertips!</strong></h5>
+</div>
+    
+
+<!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Food Directory</a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="{% url 'homeview' %}">Potluck</a>
+        </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="{% url 'aboutus' %}">About us</a>
+      </li>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Jumbotron -->
+    <div class="card card-image" style="background-image: url(https://images.unsplash.com/photo-1528076225979-12893c7d55e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2099&q=80">
+      <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+        <div class="py-5">
+
+          <!-- Content -->
+          <h1><strong> Welcome to Hojiak SG </strong></h1>
+          <p class="mb-4 pb-2 px-md-6 mx-md-6">Where we #eatlocal and #supportlocal </p>
+    
+
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+    <br/>
+
+ <p><h1 style="margin-left:0.5em"><strong> Discover what's new... </strong></h1></p>
+
+
+<!-- Carousel -->
+<!--Carousel Wrapper-->
+<br/>
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-4" style="float:right">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1505817368554-2165b1e42f85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1337&q=80" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title"><strong>The daily life of a hawker</strong></h4>
+            <p class="card-text">Explore the daily lives of uncle and auntie Seng, who have made a living selling kuehs since their 20s. </p>
+            <a href = "{% url 'homeview' %}" class="btn btn-outline-secondary">Read Our Blog!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="float:right">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1464972377689-e7674c48d806?ixlib=rb-1.2.1&auto=format&fit=crop&w=1337&q=80" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title"><strong>The future of food</strong></h4>
+            <p class="card-text">What is the future of food? How can we make food supplies cheaper and more sustainable for our hawkers? </p>
+            <a href = "{% url 'homeview' %}" class="btn btn-outline-secondary">Read Our Blog!</a>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-4" style="float:right">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1505817368554-2165b1e42f85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1337&q=80" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title"><strong>The daily life of a hawker</strong></h4>
+            <p class="card-text">Explore the daily lives of uncle and auntie Seng, who have made a living selling kuehs since their 20s. </p>
+            <a href = "{% url 'homeview' %}" class="btn btn-outline-secondary">Read Our Blog!</a>
+          </div>
+        </div>
+      </div>
+    
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div id = "carousel" class="carousel-item">
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1581601442673-c3370bb99d8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1337&q=80" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title"><strong>Food Directory</strong></h4>
+            <p class="card-text">Check out our hawkers in Singapore for the best hawker fare! From our crowdsourced food directory.</p>
+            <a class="btn btn-outline-secondary">Food Directory</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1503011994592-d30eb1ef61dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1337&q=80" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title"><strong>Contribute to our blog!</strong></h4>
+            <p class="card-text">Find out how you can be a part of the Hojiak movement too. Join us today to help our local hawkers!</p>
+            <a a href = "{% url 'homeview' %}" class="btn btn-outline-secondary">Read Our Blog!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1505817368554-2165b1e42f85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1337&q=80" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title"><strong>The daily life of a hawker</strong></h4>
+            <p class="card-text">Explore the daily lives of uncle and auntie Seng, who have made a living selling kuehs since their 20s. </p>
+            <a href = "{% url 'homeview' %}" class="btn btn-outline-secondary">Read Our Blog!</a>
+          </div>
+        </div>
+      </div>
+
+  
+
+    </div>
+    <!--/.Second slide-->
+
+   
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+
+<br/>
+<hr>
+<br/>
+
+<!-- This week feature Card Text-->
+<div class="card">
+  <div class="card-header">
+    <h2><strong>This Week's Feature</strong></h2>
+  </div>
+  <div class="card-body">
+  <img src="https://www.visitsingapore.com/dining-drinks-singapore/local-dishes/rojak/_jcr_content/par-carousel/carousel_detailpage/carousel/item_2.thumbnail.carousel-img.740.416.jpg" class="rounded float-right" alt="Card image cap" style="width: 30%">
+    
+    <h5 class="card-title">Rojak on us!</h5>
+    <br/>
+    <p class="card-text">Spend money on local food and quote us as the source. You stand to win a rojak treat from us!</p>
+    <br/><br/>
+    <a href="#" class="btn btn-outline-secondary">Go to our food directory now!</a>
+  </div>
+</div>
+
+<hr>
+<!-- Social Media icon bar-->
+<div class="icon-bar">
+  <p style="margin-left:0.5em"><small><strong> Follow us! </strong></small></p>
+  <a href="https://www.facebook.com/hojiak.sg.96/"target="_blank" class="facebook" style="margin-left:0.5em"><i class="fa fa-facebook fa-lg"></i></a>
+  <a href="https://instagram.com/hojiaksg?igshid=zsb3nkdn0ex8/"target="_blank""" class="instagram"><i class="fa fa-instagram fa-lg"></i></a>
+  
+</div>
+<br/>
+
+<div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Subscribe</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <br/>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="form3" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="form3"><strong>Your name</strong></label>
+        </div>
+
+        <div class="md-form mb-4">
+          <input type="email" id="form2" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="form2"><strong>Your email</strong></label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-outline-secondary"><strong>Send</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <a href="" class="btn btn-outline-secondary btn-rounded mb-4" data-toggle="modal" data-target="#modalSubscriptionForm">Subscribe to Hojiak!</a>
+</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

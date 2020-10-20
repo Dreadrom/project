@@ -1,0 +1,44 @@
+As the Hojiak warrior, Shun Yuan fights for the livelihood and culture of Singapore hawkers. She research on the past and present of hawkers and reinvents the notion of hawkerpreneurship for the future. 
+Her favourite hawker food is chicken rice (without chicken) because she loves the taste of the rice more than anything else.
+
+<div class="card-deck">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1589748239338-afe695e833d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1226&q=80" class="card-img-top" alt="Boss">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Hojiak Cheerleader</strong></h5>
+      <p class="card-text" style="text-align: left">As a foodie and tech enthusiast, Suz wishes to contribute to the local food scene by bringing it even closer to people through technology.
+      <p class="card-text" style="text-align: left"> Suz refuels her cheerleading spirit by eating her favourite satay beehoon and black carrot cake. If she is not cheering the team on, you find her herding cats.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1502919280275-1bed9aca68ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="Pixie Fairy">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Hojiak Creative Pixie</strong></h5>
+      <p class="card-text" style="text-align: left">Genevieve has been actively volunteering at community events, a hospital and non-profit organisations. She always believes in doing a small part in making the community a little better.</p>
+      <p class="card-text" style="text-align: left">Marketing, branding and a dash of sparkle is what she brings to the Hojiak table.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1505925456693-124134d66749?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="Spiderman">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Hojiak Spiderman</strong></h5>
+      <p class="card-text" style="text-align: center">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text" style="text-align: center"></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1553286158-5f5dac259bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Warrior">
+    <div class="card-body">
+      <h5 class="card-title"> <strong>Hojiak Warrior</strong></h5>
+      <p class="card-text" style="text-align: center">As the Hojiak warrior, Shun Yuan fights for the livelihood and culture of Singapore hawkers. She researches on the history and current evolution of hawkers, aiming to reinvent the notion of hawkerpreneurship for the future. </p>
+      <p class="card-text" style="text-align: center">Her favourite hawker food is chicken rice (without chicken) because she loves the taste of the rice more than anything else.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1518740028517-36c686a4a001?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Tech ninja">
+    <div class="card-body">
+      <h5 class="card-title">Hojiak Tech Ninja</h5>
+      <p class="card-text" style="text-align: center">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text" style="text-align: center"></p>
+    </div>
+</div>

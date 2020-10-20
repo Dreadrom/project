@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+{% if category_posts %}
+    <h1> {{ cats }}  </h1>
+    <hr>
+    <ul>
+    {% for post in category_posts %}
+    <li> <a href = "{% url 'article-detail' post.pk %}"> <strong> {{ post.title }} </strong> </a> -
+    <small>{{ post.category }} </small> |
+    {{ post.author.first_name }} {{ post.author.last_name }} |
+    {{ post.post_date }}  
+    <small>
+        {% if user.is_authenticated %}
+            {% if user.id == post.author.id %}
+                | <a href="{% url 'update_post' post.pk %}">(Edit)</a>
+                <a href="{% url 'delete_post' post.pk %}">(Delete)</a>
+            {% endif %}
+        {% endif %}
+    </small> 
+    <br/>
+    {{ post.snippet }} </li>
+    <br/>
+    {% endfor %}
+    </ul>
+
+{% else %}
+    <h2> Sorry there are no posts under this category yet... be the first to create one! </h2>
+{% endif %}
+
+{% endblock %}
