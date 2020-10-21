@@ -12,12 +12,17 @@ Dependencies/Setup:
 2) This website requires 2 dependencies to work:
  - Django
  - ckeditor
+ 
  You can use the pip command to install these after activating the virtual environment.
  
 Working on the project:
 1) After installing these dependencies, you can use the command line to cd into the folder hojiak/hojiak.
 2) Run the website using the following command: python manage.py runserver
 3) Open google chrome and type localhost:8000. if all works fine you should be able to see the hojiak website.
+4) If it does not work, do the following on the command line: 
+- python manage.py makemigrations
+- python manage.py migrate
+- repeat steps 2 and 3 above.
 
  
  
