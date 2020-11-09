@@ -68,7 +68,7 @@ div.site-branding-logo { /* Position logo within site-branding */
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  top: -14px;
+  top: -15px;
 }
 
 div.site-branding-text { /* Position text within site-branding */
