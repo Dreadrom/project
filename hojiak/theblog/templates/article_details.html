@@ -19,12 +19,15 @@
 <br/>
 
 {%if post.header_image %}
-    <img src="{{ post.header_image.url }}"> 
+    <img src="{{ post.header_image.url }}" style="width: 500px;"> 
 {% endif %}
-<br/><br/>
+<br/><br/><br/>
 {{ post.body|safe }}
 
 <br/><br/>
+<br/><br/>
+<br/>
+
 <a href="{% url 'homeview' %}" class="btn btn-outline-secondary"> Back </a>
 
 <br/><br/>
