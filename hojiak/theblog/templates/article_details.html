@@ -44,25 +44,8 @@
     - {{ total_likes }} likes
 </form>
 
-<br/><br/>
-<h2> Comments ... </h2>
-<hr>
-
-{% if not post.comments.all %}
-  No Comments Yet.... <a href = "#"> Add One </a>
-
-{% else %}
-    {% for comment in post.comments.all %}
-      <strong>
-      {{ comment.name }} - 
-      {{ comment.date_added }}
-      </strong>
-      <br/>
-      {{ comment.body }}
-      <br/><br/>
-    {% endfor %}
-{% endif %}
 <br/> <br/>
+
 <div class="card mb-3">
   <div class="row no-gutters">
     <div class="col-md-2">
@@ -76,6 +59,7 @@
         {{ post.author.first_name}} 
         {{ post.author.last_name }}
         </h5>
+  {% if post.author.profile.id %}
         <p class="small text-muted">
         <a href="{% url 'show_profile_page' post.author.profile.id %}">Profile Page </a>
         {% if post.author.profile.instagram_url %}
@@ -90,10 +74,33 @@
         <p class="card-text">
           {{ post.author.profile.bio }}
         </p>
-        
+  {% endif %}
       </div>
     </div>
   </div>
 </div>
+
+<br/>
+<h2> Comments ... </h2>
+<hr>
+
+{% if not post.comments.all %}
+  No Comments Yet.... <a href = "{% url 'add_comment' post.pk %}"> Add One </a>
+
+{% else %}
+  <a href = "{% url 'add_comment' post.pk %}"> Add a Comment </a>
+  <br/> <br/>
+
+    {% for comment in post.comments.all %}
+      <strong>
+      {{ comment.name }} - 
+      {{ comment.date_added }}
+      </strong>
+      <br/>
+      {{ comment.body }}
+      <br/><br/>
+    {% endfor %}
+{% endif %}
+<br/> <br/>
 
 {% endblock %}
